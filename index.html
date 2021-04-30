@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- style css link -->
+    <link rel="stylesheet" href="style.css">
+    <!-- responsive css link -->
+    <link rel="stylesheet" href="style1.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- jQuery cdn -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Font Awesome cdn -->
+    <script src="https://use.fontawesome.com/2195943dbd.js"></script>
+
+    <title>E-com Project no.1</title>
+
+</head>
+<body>
+
+    <!-- header section -->
+
+    <div class="header d-flex py-4 px-2">
+        <div class="container-fluid">
+            <div class="row">
+                <div id="header_logo" class="float-left col-xl-3 col-md-6 col-lg-2 col-6">
+                    <img src="/img/logo.webp" alt="">
+                </div>
+                <div id="navbar-bar" class="col-6 col-md-6 text-right float-right">
+                    <div class="navbaricon float-left text-right ml-3 pl-3 col-md-9">
+                        <i class="header_i fa fa-search py-xl-1 px-xl-3 p-1 p-md-2"></i>
+                        <i class="header_i fa fa-user py-xl-1 px-xl-3 p-1 p-md-2"></i>
+                        <i class="header_i fa fa-shopping-cart py-xl-1 px-xl-3 p-1 p-md-2"></i>
+                    </div>
+                    <i class="fa fa-bars text-danger p-1 m-1"></i>
+                </div>
+                
+                <div id="navbar-list" class=" navbar-list col-12 text-capitalize">
+                    <ul id="list-1" class="m-2 p-1" style="list-style: none;">
+                        <li class="m-1 p-1">home</li>
+                        <li class="m-1 p-1">Shop</li>
+                        <li class="m-1 p-1">about</li>
+                        <li class="m-1 p-1">latest
+                            <i id="plus-icon" class="fa fa-plus float-right"></i>
+                        </li>
+                        <li class="m-1 p-1">blog
+                            <i id="plus-icon" class="fa fa-plus float-right"></i>
+                        </li>
+                        <li class="m-1 p-1">pages
+                            <i id="plus-icon" class="fa fa-plus float-right"></i>
+                        </li>
+                        <li class="m-1 p-1">contact</li>
+                    </ul>
+                </div>
+                <div id="header_navmenu" class="float-left col-6 col-lg-8 col-xl-6 text-center">
+                    <a href="#" class="header_a py-1 px-3">Shop</a>
+                    <a href="#" class="header_a py-1 px-3">Home</a>
+                    <a href="#" class="header_a py-1 px-3">About</a>
+                    <div id="latest" class="d-inline">
+                        <a href="#"  class="header_a py-1 px-3">Latest</a>
+                        <div id="latest_dropdown" class="latest_dropdown m-1 p-1">
+                            <h4 id="productlist">Product List</h4>                                     <!--dropdown menu for latest (a tag in header section) -->
+                            <h4 id="productdetails">Product Details</h4>
+                        </div>
+                    </div>
+                    <div id="blog" class="d-inline">
+                        <a href="#" class="header_a py-1 px-3">Blog</a>
+                        <div id="blog_dropdown" class="blog_dropdown m-1 p-1">
+                            <h4 id="blogs">Blogs</h4>                                             <!--dropdown menu for blog (a tag in header section) -->
+                            <h4 id="blogdetails">Blog Details</h4>
+                        </div>
+                    </div>
+                    <div id="pages" class="d-inline">
+                        <a href="#"class="header_a py-1 px-3">Pages</a>
+                        <div id="page_dropdown" class="page_dropdown m-1 p-1">
+                            <h4 id="login">Login</h4>                                             <!--dropdown menu for pages (a tag in header section) -->
+                            <h4 id="cart">Cart1</h4>
+                            <h4 id="element">Element</h4>
+                            <h4 id="confirmation">Confirmation</h4>
+                            <h4 id="productcheckout">Product Checkout</h4>
+                        </div>
+                    </div>
+                    <a href="#" class="header_a py-1 px-3">Contact</a>
+                </div>
+                <div id="header_navicon" class="float-right col-xl-3 col-12 col-md-4 col-lg-2 m-2 m-lg-0 text-right">
+                    <i class="header_i fa fa-search py-xl-1 px-xl-3 p-1"></i>
+                    <i class="header_i fa fa-user py-xl-1 px-xl-3 p-1"></i>
+                    <i class="header_i fa fa-shopping-cart py-xl-1 px-xl-3 p-1"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <!-- header section ends  -->
+    <!-- banner section starts  -->
+<div class="banner py-3">
+    <div class="container">
+        <div class="row">
+            <div id="header_navicon1" class="float-right col-12 text-right">
+                    <i class="header_i fa fa-search py-xl-1 px-xl-3 p-1"></i>
+                    <i class="header_i fa fa-user py-xl-1 px-xl-3 p-1"></i>
+                    <i class="header_i fa fa-shopping-cart py-xl-1 px-xl-3 p-1"></i>
+            </div>
+            <div class="banner_text col-xl-8 col-md-8 float-left text-capitalize">
+                <h1 id="banner_title">select your new perfect style</h1>
+                <p id="banner_p">
+                    Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat is aute irure.
+                </p>
+                <button id="shop_now" class="btn btn-light">SHOP NOW</button>
+            </div>
+            <div class="banner_img col-xl-4 col-md-2 float-right">
+                <img src="/img/watch.webp" alt="" srcset="">
+            </div>
+        </div>
+    </div>
+</div>
+<button onclick="topFunction()" id="myBtn" title="Go to top" class="fa fa-arrow-up btn btn-primary"></button>
+<!-- new arrival section -->
+<div class="new_arrivals py-5">
+    <div class="container">
+        <div class="row">
+            <h2 id="newarrival" class="font-weight-boldern m-2 col-xl-12">New Arrivals</h2>
+            <div class="items col-xl-12">
+                <div id="product-1"  class="products m-xl-3 float-left">
+                    <img id="product-1img" class="products-img" src="/img/new_product1.webp" alt="">
+                    <div class="m-3 text-center">
+                        <h4>Thermo Ball Etip Gloves</h4>
+                        <p class="prize text-danger">$ 45,743</p>
+                    </div>
+                </div>                
+                <div id="product-2" class="products m-xl-3 float-left">
+                    <img id="product-2img" class="products-img" src="/img/new_product2.webp" alt="">
+                    <div class="m-3 text-center">
+                        <h4>Thermo Ball Etip Gloves</h4>
+                        <p class="prize text-danger">$ 45,743</p>
+                    </div>
+                </div>
+                <div id="product-3" class="products m-xl-3 float-left text-center">
+                    <img id="product-3img" class="products-img" src="/img/new_product3.webp" alt="">
+                    <div class="m-3 text-center">
+                        <h4>Thermo Ball Etip Gloves</h4>
+                        <p class="prize text-danger">$ 45,743</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- new Arrivals section ends  -->
+<!-- gallery section starts -->
+<div class="gallery">
+    <div class="row">
+        <div class="col-xl-6 col-md-6 col-lg-6 gallerygrid">
+            <div class="gallery-1grid"><img id="gallery-1" class="gallery-img" src="/img/gallery1.webp" alt=""></div>
+        </div>
+        <div class="col-xl-3 col-md-6 col-lg-3 gallerygrid">
+            <div class="gallerygrid gallery-2grid"><img id="gallery-2" class="gallery-img" src="/img/gallery2.webp" alt=""></div>
+        </div>
+        <div class="col-xl-3 col-md-12 col-lg-3 gallerygrid">
+            <div class="gallerygrid m-xl-1 gallery-34grid"><img id="gallery-3" class="gallery-img p-xl-1" src="/img/gallery3.webp" alt=""></div>
+            <div class="gallerygrid m-xl-1 gallery-34grid"><img id="gallery-4" class="gallery-img p-xl-1" src="/img/gallery4.webp" alt=""></div>
+        </div>
+    </div>
+</div>
+<!-- gallery section ends -->
+<!-- popular section starts -->
+<div class="popular">
+    <div class="container">
+        <div class="row">
+            <div class="title text-center">
+                <div class="container">
+                    <h2 class="heading">Popular Items</h2>
+                    <h4 class="subtitle d-inline">
+                        Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Quis ipsum suspendisse ultrices gravida.           
+                    </h4>
+                </div>
+            </div>
+            <div class="collection">
+    
+                <div class="collection1">
+    
+                    <div id="popular1" class="popular-grid float-left col-xl-4 p-xl-1">
+                        <img class="popular-img" src="/img/popular1.png" alt="">
+                        <div class="m-3 text-center">
+                            <h4>Thermo Ball Etip Gloves</h4>
+                            <p class="prize text-danger">$ 45,743</p>
+                        </div>
+                    </div>
+                    <div id="popular2" class="popular-grid float-left col-xl-4 p-xl-1">
+                        <img class="popular-img" src="/img/popular2.png" alt="">
+                        <div class="m-3 text-center">
+                            <h4>Thermo Ball Etip Gloves</h4>
+                            <p class="prize text-danger">$ 45,743</p>
+                        </div>
+                    </div>
+                    <div id="popular3" class="popular-grid float-left col-xl-4 p-xl-1">
+                        <img class="popular-img" src="/img/popular3.png" alt="">
+                        <div class="m-3 text-center">
+                            <h4>Thermo Ball Etip Gloves</h4>
+                            <p class="prize text-danger">$ 45,743</p>
+                        </div>
+                    </div>
+    
+                </div>
+                <div class="collection2">
+    
+                    <div id="popular4" class="popular-grid float-left col-xl-4 p-xl-1">
+                        <img class="popular-img" src="/img/popular4.png" alt="">
+                        <div class="m-3 text-center">
+                            <h4>Thermo Ball Etip Gloves</h4>
+                            <p class="prize text-danger">$ 45,743</p>
+                        </div>
+                    </div>
+                    <div id="popular5" class="popular-grid float-left col-xl-4 p-xl-1">
+                        <img class="popular-img" src="/img/popular5.png" alt="">
+                        <div class="m-3 text-center">
+                            <h4>Thermo Ball Etip Gloves</h4>
+                            <p class="prize text-danger">$ 45,743</p>
+                        </div>
+                    </div>
+                    <div id="popular6" class="popular-grid float-left col-xl-4 p-xl-1">
+                        <img class="popular-img" src="/img/popular6.png" alt="">
+                        <div class="m-3 text-center">
+                            <h4>Thermo Ball Etip Gloves</h4>
+                            <p class="prize text-danger">$ 45,743</p>
+                        </div>
+                    </div>
+                    <button class="btn btn-danger">view more product</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="script.js"></script>
+</html>
