@@ -280,3 +280,8 @@
 .popular-img{
     border-bottom: 2px solid red;
 }
+.addtocart{
+    width: 97%;
+    position: relative;
+    bottom: 40px;
+}
