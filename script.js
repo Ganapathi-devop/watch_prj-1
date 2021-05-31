@@ -42,16 +42,14 @@ $(document).ready(function(){
     //     });
     // });
 
-});
-
-//Get the button:
+    //Get the button:
 mybutton = document.getElementById("myBtn");
 
-// When the user scrolls down 20px from the top of the document, show the button
+// When the user scrolls down 10px from the top of the document, show the button
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+  if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
     mybutton.style.display = "block";
   } else {
     mybutton.style.display = "none";
@@ -64,3 +62,22 @@ function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
+
+//onclick to play video on video section
+let video = $("iframe");
+let cls = $(".video");
+let ply = $("#play");
+function videopop(){
+  ply.click(
+    function () {
+      video.removeClass(cls);
+      console.log("hello");
+    }
+  )
+  ply.click(function(){
+    $(this).hide();
+  });
+}
+});
+
+
