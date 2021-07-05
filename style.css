@@ -12,9 +12,9 @@
     font-size: 1.2rem;
     overflow: visible;
 }
-/* .header + *{
+.header + *{
     margin-top: 30px;
-} */
+}
 /* @keyframes fading{
     from{}
 } */
@@ -349,7 +349,7 @@
     width: 100%;
     height: 500px;
     float: left;
-    background-image: url(/img/sectin_bg1.png);
+    background-image: url(/watch_prj-1/img/sectin_bg1.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -398,7 +398,7 @@
     padding: 50px;
 }
 .login_bgimg{
-    background-image: url(/img/watch.webp);
+    background-image: url(/watch_prj-1/img/watch.webp);
     background-position: left;
     background-repeat: no-repeat;
     background-size: auto;
@@ -452,7 +452,7 @@
     width: 100%;
     height: 625px;
     float: left;
-    background-image: url(/img/gallery1.webp);
+    background-image: url(/watch_prj-1/img/gallery1.webp);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -490,5 +490,9 @@
     width: 200px;
     height: 500px;
     float: right;
+}
+.signup_icon img:hover{
+    transform: scale(2);
+    transition: all 1s;
 }
 /* sign up page styling ends */
