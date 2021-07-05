@@ -1,3 +1,23 @@
+<?php
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "ecom";
+
+$conn = mysqli_connect($servername , $username , $password , $dbname);
+
+if(mysqli_connect_errno()){
+    echo "failed to connect: ".mysqli_connect_error();
+}else{
+    $sql = "SELECT `username`, `password`, `email`,`name`, `id` FROM `watch` where id='".$_GET['id']."'";
+    $result = mysqli_query($conn , $sql);
+    $row = mysqli_fetch_assoc($result);
+    // Free result set
+    $result ->free_result();
+}
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -100,6 +120,9 @@
                     <i class="header_i fa fa-user py-xl-1 px-xl-3 p-1"></i>
                     <i class="header_i fa fa-shopping-cart py-xl-1 px-xl-3 p-1"></i>
                 </div>
+                <div class="user_profile">
+                    <h3>Hello..!! <?php echo $row['username'] ?></h3>
+                </div>
             </div>
         </div>
     </div>
@@ -129,7 +152,12 @@
         </div>
     </div>
 </div>
-<button onclick="topFunction()" id="myBtn" title="Go to top" class="fa fa-arrow-up btn btn-primary"></button>
+
+<!-- scroll button  -->
+
+<button onclick="topFunction()" id="scrollbtn" title="Go to top" class="fa fa-arrow-up btn btn-primary"></button>
+
+<!-- scroll button line ends -->
 <!-- new arrival section -->
 <div class="new_arrivals py-5">
     <div class="container">
@@ -257,8 +285,17 @@
 </div>
 
 <!-- popular section ends -->
-<!-- video section starts  -->
-
+<!-- video section starts   --> 
+<!-- <div class="video-section">
+    <div class="row">
+        <div class="bg-img">
+            <div class="video-contents">
+                <a class="plybtn"><i class="fa fa-play player"></i></a>
+            </div>
+        </div>
+    </div>
+</div> -->
+<!-- video section ends -->
 
 </body>
  <script src="script.js"></script>

@@ -28,13 +28,13 @@ $(document).ready(function(){
     });
    //scroll to top button function
     //Get the button:
-  mybutton = document.getElementById("myBtn");
+  mybutton = document.getElementById("scrollbtn");
 
   // When the user scrolls down 10px from the top of the document, show the button
   window.onscroll = function() {scrollFunction()};
 
   function scrollFunction() {
-    if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
+    if (document.body.scrollTop > 15 || document.documentElement.scrollTop > 15 ) {
       mybutton.style.display = "block";
     } else {
       mybutton.style.display = "none";
@@ -42,11 +42,19 @@ $(document).ready(function(){
   }
 
   // When the user clicks on the button, scroll to the top of the document
-  function topFunction() {
-    $("#mybtn").css("transition" , "1s");
-    document.body.scrollTop = 0; // For Safari
-    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-  }
+  $("#scrollbtn").click( function topFunction() {
+    document.documentElement.scrollTop = 0;
+  } );
+
+  //on click funtion for plybtn in video section
+  $(".player").click( ()=>{
+    var video_div = document.createElement("div");
+    var doc = document.getElementsByName("body");
+    doc.appendChild(video_div);
+  } );
+
+
+
 //----end of document ready function-----
 });
 
