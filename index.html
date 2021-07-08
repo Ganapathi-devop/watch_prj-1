@@ -12,8 +12,6 @@ if(mysqli_connect_errno()){
     $sql = "SELECT `username`, `password`, `email`,`name`, `id` FROM `watch` where id='".$_GET['id']."'";
     $result = mysqli_query($conn , $sql);
     $row = mysqli_fetch_assoc($result);
-    // Free result set
-    $result ->free_result();
 }
 ?>
 
@@ -283,7 +281,9 @@ if(mysqli_connect_errno()){
         </div>
     </div>
 </div>
-
+<div>
+    <img src="/watch_prj-1/img/popular6" alt="popular6">
+</div>
 <!-- popular section ends -->
 <!-- video section starts   --> 
 <!-- <div class="video-section">

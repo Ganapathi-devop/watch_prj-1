@@ -33,6 +33,7 @@
     .gallery-1grid{height: 100%;}
     #gallery-1{height: 100%;}
     .gallery-34grid{float: left; margin: 5px; width: 48%;}
+}
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
