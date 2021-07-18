@@ -27,7 +27,6 @@ $(document).ready(function(){
   mybutton = $("#scrollbtn");
 
   // When the user scrolls down 10px from the top of the document, show the button
-  $(function () {
     $(window).scroll(function() {
         if ($(this).scrollTop() > 100) {
             mybutton.css("display", "block"); // show the button
@@ -35,11 +34,10 @@ $(document).ready(function(){
           mybutton.css("display", "none"); // hide the button
         }
     });
-  });
 
   // When the user clicks on the button, scroll to the top of the document
-  mybutton.click( function() {
-    $("html", "body").animate({ scrollTo: 0}, 800);
+  mybutton.click( function(){
+    $("html", "body").animate({ scrollTop: 0}, 800);
     console.log("going top");
   } );
 
