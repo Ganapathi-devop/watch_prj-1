@@ -1,3 +1,4 @@
+//scripting for cart page
 $(document).ready(function(){
     let i =4;
     $("#navbar-bar").click(function(){
@@ -24,10 +25,10 @@ $(document).ready(function(){
             banner.removeClass("content")
             header.removeClass("sticky");
             console.log("else");
-        }
+       }
     });
    //scroll to top button function
-    //Get the button:
+    //Getting the button:
   mybutton = document.getElementById("scrollbtn");
 
   // When the user scrolls down 10px from the top of the document, show the button
@@ -43,19 +44,23 @@ $(document).ready(function(){
 
   // When the user clicks on the button, scroll to the top of the document
   $("#scrollbtn").click( function topFunction() {
-    document.documentElement.scrollTop = 0;
+    var doc = document.documentElement;
+    doc.animate({scrollTop = 0}, "slow");
   } );
 
-  //on click funtion for plybtn in video section
-  $(".player").click( ()=>{
-    var video_div = document.createElement("div");
-    var doc = document.getElementsByName("body");
-    doc.appendChild(video_div);
-  } );
-
+var prize = $("#prize").val();                     // product prize
+var unit = $("#quantity");                  //number of quantity which get the input  value from customer
+var value = $("#quantity").val();
+var totaldiv = $(".total_quantity");        //parent div of total which is use to append child(total)
+ console.log("hello")
+console.log(prize);
+if(value !== 1){
+  prize
+}
 
 
 //----end of document ready function-----
 });
+
 
 
