@@ -37,7 +37,7 @@ $(document).ready(function(){
 
   // When the user clicks on the button, scroll to the top of the document
   mybutton.click( function(){
-    $("html", "body").animate({ scrollTop: 0}, 800);
+    $([document.documentElement, document.body]).animate({ scrollTop: $("#body").offset().top}, 800);
     console.log("going top");
   } );
 
