@@ -38,21 +38,36 @@ $(document).ready(function(){
   // When the user clicks on the button, scroll to the top of the document
   mybutton.click( function(){
     $([document.documentElement, document.body]).animate({ scrollTop: $("#body").offset().top}, 800);
-    console.log("going top");
   } );
 
 // index section ends
 // script for add cart page starts
 
-var prize = $("#prize").val();                     // product prize
-var unit = $("#quantity");                  //number of quantity which get the input  value from customer
-var value = $("#quantity").val();
-var totaldiv = $(".total_quantity");        //parent div of total which is use to append child(total)
- console.log("hello")
-console.log(prize);
-if(value !== 1){
-  prize
+var prize = $("#prize").html();                     // product prize as string
+var prizenum  = parseFloat(prize);                    //changing product prize as number
+var a = toString(prizenum);
+var unit = $("#quantity");                          //input tag
+var value = $("#quantity").val();                   //number of quantity which get the input  value from customer as string
+var valuenum = parseInt(value);                     //changing quantity value as number
+var totaldiv = $(".total_quantity");                //parent div of total which is use to append child(total)
+console.log(a);
+if(value <= 1){
+  var h4 = $("<h4></h4>");
+  h4.text(prize);
+  totaldiv.append(h4);
 }
+unit.change(function(){
+    
+  console.log(typeof prize);
+  console.log(typeof value);
+  console.log(typeof prizenum);
+  console.log(typeof valuenum);
+  console.log(prizenum);
+  console.log(valuenum);
+  var total = prizenum * valuenum;
+  h4.text(total);
+  
+});
 //script for add cart page ends
 
 //----end of document ready function-----
