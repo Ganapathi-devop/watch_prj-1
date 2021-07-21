@@ -45,12 +45,10 @@ $(document).ready(function(){
 
 var prize = $("#prize").html();                     // product prize as string
 var prizenum  = parseFloat(prize);                    //changing product prize as number
-var a = toString(prizenum);
 var unit = $("#quantity");                          //input tag
 var value = $("#quantity").val();                   //number of quantity which get the input  value from customer as string
 var valuenum = parseInt(value);                     //changing quantity value as number
 var totaldiv = $(".total_quantity");                //parent div of total which is use to append child(total)
-console.log(a);
 if(value <= 1){
   var h4 = $("<h4></h4>");
   h4.text(prize);
