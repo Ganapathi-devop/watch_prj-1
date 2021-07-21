@@ -44,7 +44,7 @@ $(document).ready(function(){
 // script for add cart page starts
 
 var prize = $("#prize").html();                     // product prize as string
-var prizenum  = parseFloat(prize);                    //changing product prize as number
+var prizenum  = parseFloat(prize);                  //changing product prize as number
 var unit = $("#quantity");                          //input tag
 var value = $("#quantity").val();                   //number of quantity which get the input  value from customer as string
 var valuenum = parseInt(value);                     //changing quantity value as number
