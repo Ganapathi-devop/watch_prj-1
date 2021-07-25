@@ -568,5 +568,34 @@
     font-size: 1rem;
     font-weight: 500;
 }
+.buttons-sec{
+    width: 100%;
+    float: left;
+    margin: 10px;
+    text-align: center;
+    vertical-align: middle;
+    padding: 10px;
+    color: #777777;
+}
+.total-list{
+    width: 50%;
+    float: right;
+    margin: 10px;
+    text-align: center;
+    vertical-align: middle;
+    padding: 10px;
+    color: #777777;
 
+}
+.total-list tr{
+    margin: 5px;
+    padding: 5px;
+    border-bottom: 1px solid #DEE2E6;
+}
+.total-list ul{
+    list-style-type: none;
+    text-align: justify;
+    float: right;
+    
+}
 /* cart page styling ends */

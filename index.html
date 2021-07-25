@@ -313,11 +313,14 @@
 <script type="text/javascript">
     var user_profile = $("#user_profile"); 
     var h3 = $("<h3></h3>");
-    var clientname = "<?php echo $clientname; ?>";        
-    h3.text("Hello...!! " + clientname);
-    user_profile.append(h3);
-    console.log(clientname);
-    console.log("hello");
+    var clientname = "<?php echo $clientname; ?>";  
+    if (clientname !== null) {
+        h3.text("Hello...!! " + clientname);
+        user_profile.append(h3);
+    }else{
+        h3.text("Hello...!! Stranger :)");
+        user_profile.append(h3);
+    }    
 </script>
 <!-- link to scrip file -->
  <script src="script/script.js"></script>
