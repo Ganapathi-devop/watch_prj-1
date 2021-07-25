@@ -1,18 +1,39 @@
-<?php
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "ecom";
+<?php                                       //using php to connect with server
 
-$conn = mysqli_connect($servername , $username , $password , $dbname);
+    $servername = "localhost";
+    $username = "root";
+    $password = "";
+    $dbname = "ecom";
+    
 
-if(mysqli_connect_errno()){
-    echo "failed to connect: ".mysqli_connect_error();
-}else{
-    $sql = "SELECT `username`, `password`, `email`,`name`, `id` FROM `watch` where id='".$_GET['id']."'";
-    $result = mysqli_query($conn , $sql);
-    $row = mysqli_fetch_assoc($result);
-}
+    $conn = mysqli_connect($servername , $username , $password , $dbname);
+
+    if(mysqli_connect_errno()){                 //checking wether there is any error in connection or not
+        echo "failed to connect: ".mysqli_connect_error();
+    }else{
+        if($_GET['id'] == null){
+
+        }else{
+            
+            $sql = "SELECT `username`, `password`, `email`,`name`, `id` FROM `watch` where id='".$_GET['id']."'";
+            $result = mysqli_query($conn , $sql);
+            $row = mysqli_fetch_assoc($result);
+            // Free result set
+            $result ->free_result();
+
+            
+            // Initialize cookie name
+            
+            $clientname = $row['username'];
+            $cookie_value = $clientname;
+            
+            // Set cookie
+            setcookie($clientname);
+        }
+          
+
+    }
+
 ?>
 
 
@@ -118,15 +139,16 @@ if(mysqli_connect_errno()){
                     <i class="header_i fa fa-user py-xl-1 px-xl-3 p-1"></i>
                     <i class="header_i fa fa-shopping-cart py-xl-1 px-xl-3 p-1"></i>
                 </div>
-                <div class="user_profile">
-                    <h3>Hello..!! <?php echo $row['username'] ?></h3>
-                </div>
             </div>
         </div>
     </div>
     
 
     <!-- header section ends  -->
+    <!-- user  intraction -->
+    <div class="user_profile">
+        <h3>Hello..!! <?php echo $row['username'] ?></h3>
+    </div>
     <!-- banner section starts  -->
 <div class="banner py-3">
     <div class="container">
@@ -287,5 +309,16 @@ if(mysqli_connect_errno()){
 <!-- popular section ends -->
 
 </body>
+<!-- script for getting username from login server -->
+<script type="text/javascript">
+    var user_profile = $("#user_profile"); 
+    var h3 = $("<h3></h3>");
+    var clientname = "<?php echo $clientname; ?>";        
+    h3.text("Hello...!! " + clientname);
+    user_profile.append(h3);
+    console.log(clientname);
+    console.log("hello");
+</script>
+<!-- link to scrip file -->
  <script src="script/script.js"></script>
 </html>

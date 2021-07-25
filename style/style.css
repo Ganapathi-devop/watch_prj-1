@@ -179,6 +179,9 @@
 #productcheckout:hover{
     color: red;
 }
+.user_profile{
+    border: 2px solid #f35588;
+}
 .banner{
     width: 100%;
     background-color: #f0f0f2;
