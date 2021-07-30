@@ -48,7 +48,7 @@
                 
                 <div id="navbar-list" class=" navbar-list col-12 text-capitalize">
                     <ul id="list-1" class="m-2 p-1" style="list-style: none;">
-                        <li class="m-1 p-1">home</li>
+                        <li class="m-1 p-1"><a href="index.html">home</a></li>
                         <li class="m-1 p-1">Shop</li>
                         <li class="m-1 p-1">about</li>
                         <li class="m-1 p-1">latest
@@ -64,28 +64,28 @@
                     </ul>
                 </div>
                 <div id="header_navmenu" class="float-left col-6 col-lg-8 col-xl-6 text-center">
+                    <a href="../index.html" class="header_a py-1 px-3">Home</a>
                     <a href="#" class="header_a py-1 px-3">Shop</a>
-                    <a href="#" class="header_a py-1 px-3">Home</a>
                     <a href="#" class="header_a py-1 px-3">About</a>
                     <div id="latest" class="d-inline">
                         <a href="#"  class="header_a py-1 px-3">Latest</a>
                         <div id="latest_dropdown" class="latest_dropdown m-1 p-1">
-                            <a href="#"><h4 id="productlist">Product List</h4></a>                                     <!--dropdown menu for latest (a tag in header section) -->
+                            <a href="#"><h4 id="productlist">Product List</h4></a>            <!--dropdown menu for latest (a tag in header section) -->
                             <a href="#"><h4 id="productdetails">Product Details</h4></a>
                         </div>
                     </div>
                     <div id="blog" class="d-inline">
                         <a href="#" class="header_a py-1 px-3">Blog</a>
                         <div id="blog_dropdown" class="blog_dropdown m-1 p-1">
-                            <a href="#"><h4 id="blogs">Blogs</h4></a>                                             <!--dropdown menu for blog (a tag in header section) -->
+                            <a href="#"><h4 id="blogs">Blogs</h4></a>                     <!--dropdown menu for blog (a tag in header section) -->
                             <a href="#"><h4 id="blogdetails">Blog Details</h4></a>
                         </div>
                     </div>
                     <div id="pages" class="d-inline">
                         <a href="#"class="header_a py-1 px-3">Pages</a>
                         <div id="page_dropdown" class="page_dropdown m-1 p-1">
-                            <a href="#"><h4 id="login">Login</h4></a>            <!--dropdown menu for pages (a tag in header section) -->
-                            <a href="#"><h4 id="cart">Cart1</h4></a>
+                            <a href="login-page.html"><h4 id="login">Login</h4></a>      <!--dropdown menu for pages (a tag in header section) -->
+                            <a href="cart-page.html"><h4 id="cart">Cart</h4></a>
                             <a href="#"><h4 id="element">Element</h4></a>
                             <a href="#"><h4 id="confirmation">Confirmation</h4></a>
                             <a href="#"><h4 id="productcheckout">Product Checkout</h4></a>
@@ -94,9 +94,9 @@
                     <a href="#" class="header_a py-1 px-3">Contact</a>
                 </div>
                 <div id="header_navicon" class="float-right col-xl-3 col-12 col-md-4 col-lg-2 m-2 m-lg-0 text-right">
-                    <i class="header_i fa fa-search py-xl-1 px-xl-3 p-1"></i>
-                    <i class="header_i fa fa-user py-xl-1 px-xl-3 p-1"></i>
-                    <i class="header_i fa fa-shopping-cart py-xl-1 px-xl-3 p-1"></i>
+                    <a class="header_i fa fa-search py-xl-1 px-xl-3 p-1"></a>
+                    <a href="/pages/login-page.html" class="header_i fa fa-user py-xl-1 px-xl-3 p-1"></a>
+                    <a class="header_i fa fa-shopping-cart py-xl-1 px-xl-3 p-1"  style="color: red;" ></a>
                 </div>
             </div>
         </div>
@@ -196,11 +196,90 @@
                     </ul>
                 </td>
             </tr>
+            <tr>
+                <th>
+
+                </th>
+                <td class="float-right">
+                    <select name="states" id="states">
+                        <option value="tamilnadu">Tamil Nadu</option>
+                        <option value="kerala">Kerala</option>
+                        <option value="karnataka">Karnataka</option>
+                        <option value="goa">Goa</option>
+                    </select>
+                    <br>
+                    <input type="text" placeholder="Pincode/Zipcode" id="pincode">
+                    <br>
+                    <button class="btn btn-primary">Update Details</button>
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <button class="btn btn-primary">Update Cart</button>
+                </th>
+                <td>
+                    <button class="btn btn-primary">Close Coupon</button>
+                </td>
+            </tr>
         </table>
         <!-- table for total and sub total sec ends -->
     </div>
 </div>
 <!-- cart list section ends  -->
+<!-- footer -->
+<div class="footer">
+    <div class="container">
+        <div class="footer-top col-xl-12">
+            <div class="footer-sec1 col-xl-3 float-left">
+                <img src="/img/logo.webp" class="mb-2 pb-2" alt="logo">
+                <br>
+                <p>Asorem ipsum adipolor sdit amet, consectetur adipisicing elitcf sed do eiusmod tem.</p>
+            </div>
+            <div class="footer-sec2 col-xl-3 float-left">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#" class="quick-link">About</a></li>
+                    <li><a href="#" class="quick-link">Offers & Discounts</a></li>
+                    <li><a href="#" class="quick-link">Get Coupon</a></li>
+                    <li><a href="#" class="quick-link">Contact Us</a></li>
+                </ul>            
+            </div>
+            <div class="footer-sec3 col-xl-3 float-right">
+                <h4>New Product</h4>
+                <ul>
+                    <li><a href="#" class="quick-link">Woman Cloth</a></li>
+                    <li><a href="#" class="quick-link">Fashion Accessories</a></li>
+                    <li><a href="#" class="quick-link">Man Accessories</a></li>
+                    <li><a href="#" class="quick-link">Rubber made Toys</a></li>
+                </ul>
+            </div>
+            <div class="footer-sec4 col-xl-3 float-right">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="#" class="quick-link">Frequently Asked Questions</a></li>
+                    <li><a href="#" class="quick-link">Tearms & Conditions</a></li>
+                    <li><a href="#" class="quick-link">Privacy Policy</a></li>
+                    <li><a href="#" class="quick-link">Report a payment issue</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="float-left">
+                <p>
+                    Copyright ©2021 All rights reserved | This template is made with 
+                    <i class="fa fa-heart text-danger"></i>by <a href="index.html" class="text-danger font-weight-lighter">Colorlib</a>
+                </p>
+            </div>
+            <div class="float-right">
+                <i class="fa fa-facebook-square text-dark mx-2"></i>
+                <i class="fa fa-instagram text-dark mx-2"></i>
+                <i class="fa fa-twitter-square text-dark mx-2"></i>
+                <i class="fa fa-whatsapp text-dark mx-2"></i>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- footer ends -->
 </body>
 <script src="../script/script.js"></script>
 </html>

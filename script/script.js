@@ -41,6 +41,14 @@ $(document).ready(function(){
       $([document.documentElement, document.body]).animate({ scrollTop: $("#body").offset().top}, 800);
     } );
   
+    // video button script
+    let button = $("#play-button");
+    let iframe = $("#iframe_video");
+    let divs = $(".video_play")
+    button.click(function(){
+      divs.css("display", "none");
+      iframe.css("display", "block");
+    });
   // -----index section ends-----
   
   // signup page scripting ---->

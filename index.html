@@ -1,4 +1,4 @@
-<?php                                       //using php to connect with server
+<!-- <?php                                       //using php to connect with server
 
     $servername = "localhost";
     $username = "root";
@@ -7,6 +7,7 @@
     
 
     $conn = mysqli_connect($servername , $username , $password , $dbname);
+    echo $_SERVERp['PHP_SELF'];
 
     if(mysqli_connect_errno()){                 //checking wether there is any error in connection or not
         echo "failed to connect: ".mysqli_connect_error();
@@ -34,7 +35,7 @@
 
     }
 
-?>
+?> -->
 
 
 <!DOCTYPE html>
@@ -105,8 +106,8 @@
                     </ul>
                 </div>
                 <div id="header_navmenu" class="float-left col-6 col-lg-8 col-xl-6 text-center">
-                    <a href="#" class="header_a py-1 px-3">Shop</a>
                     <a href="#" class="header_a py-1 px-3">Home</a>
+                    <a href="#" class="header_a py-1 px-3">Shop</a>
                     <a href="#" class="header_a py-1 px-3">About</a>
                     <div id="latest" class="d-inline">
                         <a href="#"  class="header_a py-1 px-3">Latest</a>
@@ -135,9 +136,9 @@
                     <a href="#" class="header_a py-1 px-3">Contact</a>
                 </div>
                 <div id="header_navicon" class="float-right col-xl-3 col-12 col-md-4 col-lg-2 m-2 m-lg-0 text-right">
-                    <i class="header_i fa fa-search py-xl-1 px-xl-3 p-1"></i>
-                    <i class="header_i fa fa-user py-xl-1 px-xl-3 p-1"></i>
-                    <i class="header_i fa fa-shopping-cart py-xl-1 px-xl-3 p-1"></i>
+                    <a id="search" class="header_i fa fa-search py-xl-1 px-xl-3 p-1"></a>
+                    <a href="/pages/login-page.html" class="header_i fa fa-user py-xl-1 px-xl-3 p-1"></a>
+                    <a href="/pages/cart-page.html" class="header_i fa fa-shopping-cart py-xl-1 px-xl-3 p-1"></a>
                 </div>
             </div>
         </div>
@@ -307,6 +308,71 @@
     <img src="/watch_prj-1/img/popular6" alt="popular6">
 </div>
 <!-- popular section ends -->
+<!-- video section starts -->
+<div class="video-section">
+    <div class="container">
+        <div class="video-div">
+            <div class="video_play">
+                <i class="fa fa-play" id="play-button"></i>
+            </div>
+            <iframe id="iframe_video" src="https://www.youtube.com/embed/0ui_sG8ThBE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen autoply></iframe>
+        </div>
+    </div>
+</div>
+<!-- video section ends -->
+<!-- footer -->
+<div class="footer">
+    <div class="container">
+        <div class="footer-top col-xl-12">
+            <div class="footer-sec1 col-xl-3 float-left">
+                <img src="/img/logo.webp" class="mb-2 pb-2" alt="logo">
+                <p>Asorem ipsum adipolor sdit amet, consectetur adipisicing elitcf sed do eiusmod tem.</p>
+            </div>
+            <div class="footer-sec2 col-xl-3 float-left">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#" class="quick-link">About</a></li>
+                    <li><a href="#" class="quick-link">Offers & Discounts</a></li>
+                    <li><a href="#" class="quick-link">Get Coupon</a></li>
+                    <li><a href="#" class="quick-link">Contact Us</a></li>
+                </ul>            
+            </div>
+            <div class="footer-sec3 col-xl-3 float-right">
+                <h4>New Product</h4>
+                <ul>
+                    <li><a href="#" class="quick-link">Woman Cloth</a></li>
+                    <li><a href="#" class="quick-link">Fashion Accessories</a></li>
+                    <li><a href="#" class="quick-link">Man Accessories</a></li>
+                    <li><a href="#" class="quick-link">Rubber made Toys</a></li>
+                </ul>
+            </div>
+            <div class="footer-sec4 col-xl-3 float-right">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="#" class="quick-link">Frequently Asked Questions</a></li>
+                    <li><a href="#" class="quick-link">Tearms & Conditions</a></li>
+                    <li><a href="#" class="quick-link">Privacy Policy</a></li>
+                    <li><a href="#" class="quick-link">Report a payment issue</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="float-left">
+                <p>
+                    Copyright ©2021 All rights reserved | This template is made with 
+                    <i class="fa fa-heart text-danger"></i>by <a href="index.html" class="text-danger font-weight-lighter">Colorlib</a>
+                </p>
+            </div>
+            <div class="float-right">
+                <i class="fa fa-facebook-square text-dark mx-2"></i>
+                <i class="fa fa-instagram text-dark mx-2"></i>
+                <i class="fa fa-twitter-square text-dark mx-2"></i>
+                <i class="fa fa-whatsapp text-dark mx-2"></i>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- footer ends -->
 
 </body>
 <!-- script for getting username from login server -->
