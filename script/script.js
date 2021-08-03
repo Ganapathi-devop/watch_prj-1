@@ -94,6 +94,19 @@ $(document).ready(function(){
     
   });
   //-----script for add cart page ends-----
+
+  // -----scripting for shop page -----
+
+  // for flters on click border style emmet
+  function filterborder(){
+    $(this).css("border-bottom", "2px solid red");
+  }
+  let f1 = $("#f1");
+  let f2 = $("#f2");
+  let f3 = $("#f3");
+  f1.add(f2).add(f3).on('click', filterborder);
+  
+  // -----scripting for shop page ends -----
   
   //----end of document ready function-----
   });

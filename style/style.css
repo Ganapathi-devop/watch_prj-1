@@ -715,6 +715,15 @@
     padding: 10px 20px;
 }
 /* cart page styling ends */
+
+/* shop page styling */
+.showcase-section{
+    width: 100%;
+    float: left;
+    padding: 100px 0px;
+}
+/* shop page styling ends */
+
 /* footer styling */
 .footer{
     width: 100%;
