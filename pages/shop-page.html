@@ -120,11 +120,11 @@
     <div class="showcase-section">
         <div class="container">
             <div class="showcase-btn py-3">
-                <div class="filters-showcase">
-                    <a class="text-decoration-none float-left m-1 p-2 filters nav-item nav-link active" id="f1"><h5>Newest Arrivals</h5></a>
-                    <a href="#nav1-collection" class="text-decoration-none float-left m-1 p-2 filters" id="f2"><h5>Price High to Low</h5></a>
-                    <a class="text-decoration-none float-left m-1 p-2 filters" id="f3"><h5>Most Popular</h5></a>
-                </div>
+                <ul class="filters-showcase nav nav-pills">
+                    <li><a class="text-decoration-none float-left m-1 p-2 filters nav-item nav-link active" id="f1">Newest Arrivals</a></li>
+                    <li><a href="#nav1-collection" class="text-decoration-none float-left m-1 p-2 filters" id="f2">Price High to Low </h5></a></li>
+                    <li><a class="text-decoration-none float-left m-1 p-2 filters" id="f3">Most Popular</a></li>
+                </ul>
                 <div class="count col-xl-6 float-right">
                     <select name="page" class="float-right m-1 p-2 btn btn-light" id="pages">
                         <option value="12-page">12 per page</option>
@@ -134,65 +134,121 @@
                     </select>
                 </div>
             </div>
-                <div class="collection tab-content" id="nav1-collection">
-        
-                    <div class="collection1 tab-pane fade">
-        
-                        <div id="popular1" class="popular-grid float-left col-xl-4 p-xl-1">
-                            <img class="popular-img" src="/img/popular1.png" alt="">
-                            <button id="addtocart1" class="btn btn-danger addtocart">Add to cart</button>
-                            <div class="m-3 text-center">
-                                <h4>Thermo Ball Etip Gloves</h4>
-                                <p class="prize text-danger">$ 45,743</p>
-                            </div>
+            <!-- whole collection  -->
+            <div class="tab-content whole-collection">
+                <!-- collection newest -->
+            <div class="collection tab-content" id="nav1-collection">
+                <div class="collection1 tab-pane fade">
+                    <div id="popular1" class="popular-grid float-left col-xl-4 p-xl-1">
+                        <img class="popular-img" src="/img/popular1.png" alt="">
+                        <button id="addtocart1" class="btn btn-danger addtocart">Add to cart</button>
+                        <div class="m-3 text-center">
+                            <h4>Thermo Ball Etip Gloves</h4>
+                            <p class="prize text-danger">$ 45,743</p>
                         </div>
-                        <div id="popular2" class="popular-grid float-left col-xl-4 p-xl-1">
-                            <img class="popular-img" src="/img/popular2.png" alt="">
-                            <button id="addtocart2" class="btn btn-danger addtocart">Add to cart</button>
-                            <div class="m-3 text-center">
-                                <h4>Thermo Ball Etip Gloves</h4>
-                                <p class="prize text-danger">$ 45,743</p>
-                            </div>
-                        </div>
-                        <div id="popular3" class="popular-grid float-left col-xl-4 p-xl-1">
-                            <img class="popular-img" src="/img/popular3.png" alt="">
-                            <button id="addtocart3" class="btn btn-danger addtocart">Add to cart</button>
-                            <div class="m-3 text-center">
-                                <h4>Thermo Ball Etip Gloves</h4>
-                                <p class="prize text-danger">$ 45,743</p>
-                            </div>
-                        </div>
-        
                     </div>
-                    <div class="collection2 tab-pane fade">
-        
-                        <div id="popular4" class="popular-grid float-left col-xl-4 p-xl-1">
-                            <img class="popular-img" src="/img/popular4.png" alt="">
-                            <button id="addtocart4" class="btn btn-danger addtocart">Add to cart</button>
-                            <div class="m-3 text-center">
-                                <h4>Thermo Ball Etip Gloves</h4>
-                                <p class="prize text-danger">$ 45,743</p>
-                            </div>
+                    <div id="popular2" class="popular-grid float-left col-xl-4 p-xl-1">
+                        <img class="popular-img" src="/img/popular2.png" alt="">
+                        <button id="addtocart2" class="btn btn-danger addtocart">Add to cart</button>
+                        <div class="m-3 text-center">
+                            <h4>Thermo Ball Etip Gloves</h4>
+                            <p class="prize text-danger">$ 45,743</p>
                         </div>
-                        <div id="popular5" class="popular-grid float-left col-xl-4 p-xl-1">
-                            <img class="popular-img" src="/img/popular5.png" alt="">
-                            <button id="addtocart5" class="btn btn-danger addtocart">Add to cart</button>
-                            <div class="m-3 text-center">
-                                <h4>Thermo Ball Etip Gloves</h4>
-                                <p class="prize text-danger">$ 45,743</p>
-                            </div>
+                    </div>
+                    <div id="popular3" class="popular-grid float-left col-xl-4 p-xl-1">
+                        <img class="popular-img" src="/img/popular3.png" alt="">
+                        <button id="addtocart3" class="btn btn-danger addtocart">Add to cart</button>
+                        <div class="m-3 text-center">
+                            <h4>Thermo Ball Etip Gloves</h4>
+                            <p class="prize text-danger">$ 45,743</p>                            
                         </div>
-                        <div id="popular6" class="popular-grid float-left col-xl-4 p-xl-1">
-                            <img class="popular-img" src="/img/popular6.png" alt="">
-                            <button id="addtocart6" class="btn btn-danger addtocart">Add to cart</button>
-                            <div class="m-3 text-center">
-                                <h4>Thermo Ball Etip Gloves</h4>
-                                <p class="prize text-danger">$ 45,743</p>
-                            </div>
+                    </div>
+                </div>
+                <div class="collection2 tab-pane">
+                    <div id="popular4" class="popular-grid float-left col-xl-4 p-xl-1">
+                        <img class="popular-img" src="/img/popular4.png" alt="">
+                        <button id="addtocart4" class="btn btn-danger addtocart">Add to cart</button>
+                        <div class="m-3 text-center">
+                            <h4>Thermo Ball Etip Gloves</h4>
+                            <p class="prize text-danger">$ 45,743</p>
+                        </div>
+                    </div>
+                    <div id="popular5" class="popular-grid float-left col-xl-4 p-xl-1">
+                        <img class="popular-img" src="/img/popular5.png" alt="">
+                        <button id="addtocart5" class="btn btn-danger addtocart">Add to cart</button>
+                        <div class="m-3 text-center">
+                            <h4>Thermo Ball Etip Gloves</h4>
+                            <p class="prize text-danger">$ 45,743</p>                            
+                        </div>
+                    </div>
+                    <div id="popular6" class="popular-grid float-left col-xl-4 p-xl-1">
+                        <img class="popular-img" src="/img/popular6.png" alt="">
+                        <button id="addtocart6" class="btn btn-danger addtocart">Add to cart</button>
+                        <div class="m-3 text-center">
+                            <h4>Thermo Ball Etip Gloves</h4>
+                            <p class="prize text-danger">$ 45,743</p>
                         </div>
                     </div>
                 </div>
             </div>
+            <!-- collection price high to low -->
+            <div class="collection tab-content" id="nav1-collection">
+                <div class="collection1 tab-pane fade">
+                    <div id="popular1" class="popular-grid float-left col-xl-4 p-xl-1">
+                        <img class="popular-img" src="/img/popular1.png" alt="">
+                        <button id="addtocart1" class="btn btn-danger addtocart">Add to cart</button>
+                        <div class="m-3 text-center">
+                            <h4>Thermo Ball Etip Gloves</h4>
+                            <p class="prize text-danger">$ 45,743</p>
+                        </div>
+                    </div>
+                    <div id="popular2" class="popular-grid float-left col-xl-4 p-xl-1">
+                        <img class="popular-img" src="/img/popular2.png" alt="">
+                        <button id="addtocart2" class="btn btn-danger addtocart">Add to cart</button>
+                        <div class="m-3 text-center">
+                            <h4>Thermo Ball Etip Gloves</h4>
+                            <p class="prize text-danger">$ 45,743</p>
+                        </div>
+                    </div>
+                    <div id="popular3" class="popular-grid float-left col-xl-4 p-xl-1">
+                        <img class="popular-img" src="/img/popular3.png" alt="">
+                        <button id="addtocart3" class="btn btn-danger addtocart">Add to cart</button>
+                        <div class="m-3 text-center">
+                            <h4>Thermo Ball Etip Gloves</h4>
+                            <p class="prize text-danger">$ 45,743</p>                            
+                        </div>
+                    </div>
+                </div>
+                <div class="collection2 tab-pane">
+                    <div id="popular4" class="popular-grid float-left col-xl-4 p-xl-1">
+                        <img class="popular-img" src="/img/popular4.png" alt="">
+                        <button id="addtocart4" class="btn btn-danger addtocart">Add to cart</button>
+                        <div class="m-3 text-center">
+                            <h4>Thermo Ball Etip Gloves</h4>
+                            <p class="prize text-danger">$ 45,743</p>
+                        </div>
+                    </div>
+                    <div id="popular5" class="popular-grid float-left col-xl-4 p-xl-1">
+                        <img class="popular-img" src="/img/popular5.png" alt="">
+                        <button id="addtocart5" class="btn btn-danger addtocart">Add to cart</button>
+                        <div class="m-3 text-center">
+                            <h4>Thermo Ball Etip Gloves</h4>
+                            <p class="prize text-danger">$ 45,743</p>                            
+                        </div>
+                    </div>
+                    <div id="popular6" class="popular-grid float-left col-xl-4 p-xl-1">
+                        <img class="popular-img" src="/img/popular6.png" alt="">
+                        <button id="addtocart6" class="btn btn-danger addtocart">Add to cart</button>
+                        <div class="m-3 text-center">
+                            <h4>Thermo Ball Etip Gloves</h4>
+                            <p class="prize text-danger">$ 45,743</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <!-- whole colection ends -->
+        </div>
     </div>
 <!-- ends -->
 
