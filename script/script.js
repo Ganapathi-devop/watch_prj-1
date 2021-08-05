@@ -99,7 +99,9 @@ $(document).ready(function(){
 
   // for flters on click border style emmet
   function filterborder(){
-    $(this).css("border-bottom", "2px solid red");
+    if($(this).css("border-bottm")==false){
+      $(this).css("border-bottom", "2px solid red");
+    }
   }
   let f1 = $("#f1");
   let f2 = $("#f2");
