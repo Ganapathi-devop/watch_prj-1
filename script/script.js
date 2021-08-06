@@ -97,16 +97,23 @@ $(document).ready(function(){
 
   // -----scripting for shop page -----
 
-  // for flters on click border style emmet
-  function filterborder(){
-    if($(this).css("border-bottm")==false){
-      $(this).css("border-bottom", "2px solid red");
-    }
-  }
-  let f1 = $("#f1");
+  // for flters on click border style
+  let f1 = $("#f1");    //a tag 
   let f2 = $("#f2");
   let f3 = $("#f3");
-  f1.add(f2).add(f3).on('click', filterborder);
+  f1.click(function(){
+    $(this).css("border-bottom", "2px solid red");
+    f2.add(f3).css("border-bottom", "unset")
+  });
+  f2.click(function(){
+    $(this).css("border-bottom", "2px solid red");
+    f1.add(f3).css("border-bottom", "unset");
+  });
+  f3.click(function(){
+    $(this).css("border-bottom", "2px solid red");
+    f2.add(f1).css("border-bottom", "unset");
+  });
+
   
   // -----scripting for shop page ends -----
   

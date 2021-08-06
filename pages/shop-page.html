@@ -25,6 +25,7 @@
 
     <!-- Font Awesome cdn -->
     <script src="https://use.fontawesome.com/2195943dbd.js"></script>
+    
     <title>Shop page</title>
 </head>
 <body id="body">
@@ -121,9 +122,9 @@
         <div class="container">
             <div class="showcase-btn py-3">
                 <ul class="filters-showcase nav nav-pills">
-                    <li><a href="#newest" class="text-decoration-none float-left m-1 p-2 filters nav-item nav-link active" id="f1">Newest Arrivals</a></li>
-                    <li><a href="#high-low" class="text-decoration-none float-left m-1 p-2 filters" id="f2">Price High to Low </h5></a></li>
-                    <li><a href="#most-popular" class="text-decoration-none float-left m-1 p-2 filters" id="f3">Most Popular</a></li>
+                    <li><a href="#newest" data-toggle="tab" class="text-decoration-none float-left m-1 p-2 filters active" id="f1">Newest Arrivals</a></li>
+                    <li><a href="#high-low" data-toggle="tab" class="text-decoration-none float-left m-1 p-2 filters" id="f2">Price High to Low </h5></a></li>
+                    <li><a href="#most-popular" data-toggle="tab" class="text-decoration-none float-left m-1 p-2 filters" id="f3">Most Popular</a></li>
                 </ul>
                 <div class="count col-xl-6 float-right">
                     <select name="page" class="float-right m-1 p-2 btn btn-light" id="pages">
@@ -137,8 +138,8 @@
             <!-- whole collection  -->
             <div class="tab-content whole-collection">
                 <!-- collection newest -->
-                <div class="collection tab-pane in active" id="newest" href="newest">
-                    <div class="collection1 tab-pane fade">
+                <div class="collection tab-pane in active" id="newest">
+                    <div class="collection1">
                         <div id="popular1" class="popular-grid float-left col-xl-4 p-xl-1">
                             <img class="popular-img" src="/img/popular1.png" alt="">
                             <button id="addtocart1" class="btn btn-danger addtocart">Add to cart</button>
@@ -164,7 +165,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="collection2 tab-pane">
+                    <div class="collection2">
                         <div id="popular4" class="popular-grid float-left col-xl-4 p-xl-1">
                             <img class="popular-img" src="/img/popular4.png" alt="">
                             <button id="addtocart4" class="btn btn-danger addtocart">Add to cart</button>
@@ -193,7 +194,7 @@
                 </div>
                 <!-- collection price high to low -->
             <div class="collection tab-pane fade" id="high-low" >
-                <div class="collection1 tab-pane fade">
+                <div class="collection1">
                     <div id="popular1" class="popular-grid float-left col-xl-4 p-xl-1">
                         <img class="popular-img" src="/img/popular1.png" alt="">
                         <button id="addtocart1" class="btn btn-danger addtocart">Add to cart</button>
@@ -219,7 +220,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="collection2 tab-pane">
+                <div class="collection2">
                     <div id="popular4" class="popular-grid float-left col-xl-4 p-xl-1">
                         <img class="popular-img" src="/img/popular4.png" alt="">
                         <button id="addtocart4" class="btn btn-danger addtocart">Add to cart</button>
@@ -248,7 +249,7 @@
             </div>
             <!-- collection most popular-->
             <div class="collection tab-pane fade" id="most-popular">
-                <div class="collection1 tab-pane fade">
+                <div class="collection1">
                     <div id="popular1" class="popular-grid float-left col-xl-4 p-xl-1">
                         <img class="popular-img" src="/img/popular1.png" alt="">
                         <button id="addtocart1" class="btn btn-danger addtocart">Add to cart</button>
@@ -274,7 +275,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="collection2 tab-pane">
+                <div class="collection2">
                     <div id="popular4" class="popular-grid float-left col-xl-4 p-xl-1">
                         <img class="popular-img" src="/img/popular4.png" alt="">
                         <button id="addtocart4" class="btn btn-danger addtocart">Add to cart</button>
@@ -345,6 +346,60 @@
     </div>
 </div>
 <!-- pre-footer ends -->
+
+<!-- footer -->
+<div class="footer">
+    <div class="container">
+        <div class="footer-top col-xl-12">
+            <div class="footer-sec1 col-xl-3 float-left">
+                <img src="/img/logo.webp" class="mb-2 pb-2" alt="logo">
+                <p>Asorem ipsum adipolor sdit amet, consectetur adipisicing elitcf sed do eiusmod tem.</p>
+            </div>
+            <div class="footer-sec2 col-xl-3 float-left">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#" class="quick-link">About</a></li>
+                    <li><a href="#" class="quick-link">Offers & Discounts</a></li>
+                    <li><a href="#" class="quick-link">Get Coupon</a></li>
+                    <li><a href="#" class="quick-link">Contact Us</a></li>
+                </ul>            
+            </div>
+            <div class="footer-sec3 col-xl-3 float-right">
+                <h4>New Product</h4>
+                <ul>
+                    <li><a href="#" class="quick-link">Woman Cloth</a></li>
+                    <li><a href="#" class="quick-link">Fashion Accessories</a></li>
+                    <li><a href="#" class="quick-link">Man Accessories</a></li>
+                    <li><a href="#" class="quick-link">Rubber made Toys</a></li>
+                </ul>
+            </div>
+            <div class="footer-sec4 col-xl-3 float-right">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="#" class="quick-link">Frequently Asked Questions</a></li>
+                    <li><a href="#" class="quick-link">Tearms & Conditions</a></li>
+                    <li><a href="#" class="quick-link">Privacy Policy</a></li>
+                    <li><a href="#" class="quick-link">Report a payment issue</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="float-left">
+                <p>
+                    Copyright ©2021 All rights reserved | This template is made with 
+                    <i class="fa fa-heart text-danger"></i>by <a href="index.html" class="text-danger font-weight-lighter">Colorlib</a>
+                </p>
+            </div>
+            <div class="float-right">
+                <i class="fa fa-facebook-square text-dark mx-2"></i>
+                <i class="fa fa-instagram text-dark mx-2"></i>
+                <i class="fa fa-twitter-square text-dark mx-2"></i>
+                <i class="fa fa-whatsapp text-dark mx-2"></i>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- footer ends -->
 </body>
 <script src="../script/script.js"></script>
 </html>
