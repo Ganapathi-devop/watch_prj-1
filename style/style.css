@@ -724,6 +724,53 @@
 }
 /* shop page styling ends */
 
+/* about page styling */
+
+.mission{
+    width: 100%;
+    float: left;
+    padding: 200px;
+}
+.mission p{
+    color: #464d65;
+    font-size: 14px;
+    line-height: 30px;
+    display: inline-block;
+    position: relative;
+    padding-left: 68px;
+}
+.mission1{
+    width: 100%;
+    text-align: left;
+    float: left;
+}
+.mission2{
+    width: 100%;
+    text-align: left;
+    float: left;
+}
+.mission h4::before{
+    position: absolute;
+    content: "";
+    width: 54px;
+    height: 2px;
+    background: #eb566c; 
+    top: 50%;
+    left: 0%;
+}
+.mission h4{
+    font-weight: 700;
+    margin-bottom: 30px;
+    color: #000a2d;
+    display: inline-block;
+    position: relative;
+    padding-left: 68px;
+    font-size: 2rem;
+    line-height: 1.2;
+}
+
+/* about page styling ends */
+
 /* footer styling */
 .footer{
     width: 100%;
