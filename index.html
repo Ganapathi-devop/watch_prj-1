@@ -77,7 +77,7 @@
         <div class="container-fluid">
             <div class="row">
                 <div id="header_logo" class="float-left col-xl-3 col-md-6 col-lg-2 col-6">
-                    <img src="/watch_prj-1/img/logo.webp" alt="">
+                    <img src="img/logo.webp" alt="">
                 </div>
                 <div id="navbar-bar" class="col-6 col-md-6 text-right float-right">
                     <div class="navbaricon float-left text-right ml-3 pl-3 col-md-9">
@@ -126,11 +126,13 @@
                     <div id="pages" class="d-inline">
                         <a href="#"class="header_a py-1 px-3">Pages</a>
                         <div id="page_dropdown" class="page_dropdown m-1 p-1">
-                            <h4 id="login"><a href="/pages/login-page.html">Login</a></h4>                                             <!--dropdown menu for pages (a tag in header section) -->
-                            <h4 id="cart"><a href="/pages/cart-page.html">Cart</a></h4>
-                            <h4 id="element">Element</h4>
-                            <h4 id="confirmation">Confirmation</h4>
-                            <h4 id="productcheckout">Product Checkout</h4>
+                            <div class="flex-div">
+                                <a id="login-page"href="/pages/login-page.html">Login</a></a>                                             <!--dropdown menu for pages (a tag in header section) -->
+                                <a id="cart-page"href="/pages/cart-page.html">Cart</a></a>
+                                <a href="/pages/element-page.html" id="element">Element</a>
+                                <a id="confirmation">Confirmation</a>
+                                <a id="productcheckout">Product Checkout</a>
+                            </div>
                         </div>
                     </div>
                     <a href="#" class="header_a py-1 px-3">Contact</a>
@@ -168,7 +170,7 @@
                 <button id="shop_now" class="btn btn-light">SHOP NOW</button>
             </div>
             <div class="banner_img col-xl-4 col-md-2 float-right">
-                <img src="/watch_prj-1/img/watch.webp" alt="" srcset="">
+                <img src="img/watch.webp" alt="" srcset="">
             </div>
         </div>
     </div>
@@ -186,21 +188,21 @@
             <h2 id="newarrival" class="font-weight-boldern m-2 col-xl-12">New Arrivals</h2>
             <div class="items col-xl-12">
                 <div id="product-1"  class="products m-xl-3 float-left">
-                    <img id="product-1img" class="products-img" src="/watch_prj-1/img/new_product1.webp" alt="">
+                    <img id="product-1img" class="products-img" src="img/new_product1.webp" alt="">
                     <div class="m-3 text-center">
                         <h4>Thermo Ball Etip Gloves</h4>
                         <p class="prize text-danger">$ 45,743</p>
                     </div>
                 </div>                
                 <div id="product-2" class="products m-xl-3 float-left">
-                    <img id="product-2img" class="products-img" src="/watch_prj-1/img/new_product2.webp" alt="">
+                    <img id="product-2img" class="products-img" src="img/new_product2.webp" alt="">
                     <div class="m-3 text-center">
                         <h4>Thermo Ball Etip Gloves</h4>
                         <p class="prize text-danger">$ 45,743</p>
                     </div>
                 </div>
                 <div id="product-3" class="products m-xl-3 float-left text-center">
-                    <img id="product-3img" class="products-img" src="/watch_prj-1/img/new_product3.webp" alt="">
+                    <img id="product-3img" class="products-img" src="img/new_product3.webp" alt="">
                     <div class="m-3 text-center">
                         <h4>Thermo Ball Etip Gloves</h4>
                         <p class="prize text-danger">$ 45,743</p>
@@ -215,14 +217,20 @@
 <div class="gallery">
     <div class="row">
         <div class="col-xl-6 col-md-6 col-lg-6 gallerygrid">
-            <div class="gallery-1grid"><img id="gallery-1" class="gallery-img" src="/watch_prj-1/img/gallery1.webp" alt=""></div>
+            <div class="gallery-1grid"><img id="gallery-1" class="gallery-img" src="img/gallery1.webp" alt=""></div>
         </div>
         <div class="col-xl-3 col-md-6 col-lg-3 gallerygrid">
-            <div class="gallerygrid gallery-2grid"><img id="gallery-2" class="gallery-img" src="/watch_prj-1/img/gallery2.webp" alt=""></div>
+            <div class="gallerygrid gallery-2grid">
+                <img id="gallery-2" class="gallery-img" src="img/gallery2.webp" alt="">
+            </div>
         </div>
         <div class="col-xl-3 col-md-12 col-lg-3 gallerygrid">
-            <div class="gallerygrid m-xl-1 gallery-34grid"><img id="gallery-3" class="gallery-img p-xl-1" src="/watch_prj-1/img/gallery3.webp" alt=""></div>
-            <div class="gallerygrid m-xl-1 gallery-34grid"><img id="gallery-4" class="gallery-img p-xl-1" src="/watch_prj-1/img/gallery4.webp" alt=""></div>
+            <div class="gallerygrid m-xl-1 gallery-34grid">
+                <img id="gallery-3" class="gallery-img p-xl-1" src="img/gallery3.webp" alt="">
+            </div>
+            <div class="gallerygrid m-xl-1 gallery-34grid">
+                <img id="gallery-4" class="gallery-img p-xl-1" src="img/gallery4.webp" alt="">
+            </div>
         </div>
     </div>
 </div>
@@ -245,7 +253,7 @@
                 <div class="collection1">
     
                     <div id="popular1" class="popular-grid float-left col-xl-4 p-xl-1">
-                        <img class="popular-img" src="/watch_prj-1/img/popular1.png" alt="">
+                        <img class="popular-img" src="img/popular1.png" alt="">
                         <button id="addtocart1" class="btn btn-danger addtocart">Add to cart</button>
                         <div class="m-3 text-center">
                             <h4>Thermo Ball Etip Gloves</h4>
@@ -253,7 +261,7 @@
                         </div>
                     </div>
                     <div id="popular2" class="popular-grid float-left col-xl-4 p-xl-1">
-                        <img class="popular-img" src="/watch_prj-1/img/popular2.png" alt="">
+                        <img class="popular-img" src="img/popular2.png" alt="">
                         <button id="addtocart2" class="btn btn-danger addtocart">Add to cart</button>
                         <div class="m-3 text-center">
                             <h4>Thermo Ball Etip Gloves</h4>
@@ -261,7 +269,7 @@
                         </div>
                     </div>
                     <div id="popular3" class="popular-grid float-left col-xl-4 p-xl-1">
-                        <img class="popular-img" src="/watch_prj-1/img/popular3.png" alt="">
+                        <img class="popular-img" src="img/popular3.png" alt="">
                         <button id="addtocart3" class="btn btn-danger addtocart">Add to cart</button>
                         <div class="m-3 text-center">
                             <h4>Thermo Ball Etip Gloves</h4>
@@ -273,7 +281,7 @@
                 <div class="collection2">
     
                     <div id="popular4" class="popular-grid float-left col-xl-4 p-xl-1">
-                        <img class="popular-img" src="/watch_prj-1/img/popular4.png" alt="">
+                        <img class="popular-img" src="img/popular4.png" alt="">
                         <button id="addtocart4" class="btn btn-danger addtocart">Add to cart</button>
                         <div class="m-3 text-center">
                             <h4>Thermo Ball Etip Gloves</h4>
@@ -281,7 +289,7 @@
                         </div>
                     </div>
                     <div id="popular5" class="popular-grid float-left col-xl-4 p-xl-1">
-                        <img class="popular-img" src="/watch_prj-1/img/popular5.png" alt="">
+                        <img class="popular-img" src="img/popular5.png" alt="">
                         <button id="addtocart5" class="btn btn-danger addtocart">Add to cart</button>
                         <div class="m-3 text-center">
                             <h4>Thermo Ball Etip Gloves</h4>
@@ -289,7 +297,7 @@
                         </div>
                     </div>
                     <div id="popular6" class="popular-grid float-left col-xl-4 p-xl-1">
-                        <img class="popular-img" src="/watch_prj-1/img/popular6.png" alt="">
+                        <img class="popular-img" src="img/popular6.png" alt="">
                         <button id="addtocart6" class="btn btn-danger addtocart">Add to cart</button>
                         <div class="m-3 text-center">
                             <h4>Thermo Ball Etip Gloves</h4>
@@ -305,7 +313,7 @@
     </div>
 </div>
 <div>
-    <img src="/watch_prj-1/img/popular6" alt="popular6">
+    <img src="img/popular6" alt="popular6">
 </div>
 <!-- popular section ends -->
 <!-- video section starts -->

@@ -40,7 +40,24 @@ $(document).ready(function(){
     mybutton.click( function(){
       $([document.documentElement, document.body]).animate({ scrollTop: $("#body").offset().top}, 800);
     } );
-  
+
+
+  //page_dropdown button script
+
+    let pageDropdown = $('#page_dropdown');
+    let innerPageDropdown = $('#productcheckout');
+    let pages = $('#pages');
+     pages.mouseover(
+       function() {
+         pageDropdown.css("display", "block");
+       }
+     );
+     innerPageDropdown.mouseleave(
+       function() {
+         pageDropdown.css("display", "none");
+       }
+     )
+
     // video button script
     let button = $("#play-button");
     let iframe = $("#iframe_video");
@@ -117,27 +134,7 @@ $(document).ready(function(){
   
   // -----scripting for shop page ends -----
 
-  // -----scripting for product page slideshow gallery -----
-  
-  var slideIndex = 1;
-  showDivs(slideIndex);
-  
-  function plusDivs(n) {
-    showDivs(slideIndex += n);
-  }
-  
-  function showDivs(n) {
-    var i;
-    var x = document.getElementsByClassName("mySlides");
-    if (n > x.length) {slideIndex = 1}
-    if (n < 1) {slideIndex = x.length} ;
-    for (i = 0; i < x.length; i++) {
-      x[i].style.display = "none";
-    }
-    x[slideIndex-1].style.display = "block";
-  }
-
-  // -----scripting for product page slideshow gallery ends-----
+ 
   
   //----end of document ready function-----
   });
