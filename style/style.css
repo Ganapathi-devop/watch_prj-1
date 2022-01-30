@@ -101,6 +101,7 @@
 #pages {
   position: relative;
   display: inline-block;
+  z-index: 1;
 }
 #latest:hover .latest_dropdown {
   display: block;
@@ -879,8 +880,8 @@
 
 /* Element page styling  */
 .bodyElement{
-  display: flex;
   width: 100%;
+  float: left;
   padding: 150px 150px;
 }
 .textSample-section{
@@ -898,8 +899,87 @@
 .textSample-section p{
   font-size: 1.3rem;
   margin: 1.5rem 0px;
-  
+  color: #777;
 }
+.buttonSample-row{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: space-around;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 2rem 1rem;
+}
+.sampleButtons-square1 , .sampleButtons-square2 , .sampleButtons-semiSquare1 , .sampleButtons-semiSquare2 , .sampleButtons-circle1 , .sampleButtons-circle2{
+  padding: .9rem 2rem;
+  margin: 1rem;
+  color: #fff;
+  background-color: rgba(252, 247, 247, 0.849);
+  font-weight: 600;
+  border: none;
+}
+.sampleButtons-square1 , .sampleButtons-square2{
+  border-radius: 0% !important;
+}
+.sampleButtons-semiSquare1 , .sampleButtons-semiSquare2{
+  border-radius: 10px !important;
+} 
+.sampleButtons-circle1 , .sampleButtons-circle2{
+  border-radius: 20px !important;
+}
+.sampleButtons-square1:hover , .sampleButtons-semiSquare1:hover , .sampleButtons-circle1:hover{
+  background-color: #fff;
+}
+.defaultButton1 , .defaultButton2:hover{
+  color: #415094;
+}
+.blackButton1 , .blackButton2:hover{
+  color: #fff;
+  background-color: #000;
+}
+.blackButton1:hover , .blackButton2{
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #000;
+}
+.blueButton1 , .blueButton2:hover{
+  color: #fff;
+  background-color: #4CD3E3;
+}
+.blueButton1:hover , .blueButton2{
+  background-color: #fff;
+  color: #4CD3E3;
+  border: 1px solid #4CD3E3;
+}
+.infoBlueButton1 , .infoBlueButton2:hover{
+  color: #fff;
+  background-color: #38A4FF;
+}
+.infoBlueButton1:hover , .infoBlueButton2{
+  color: #38A4FF;
+  background-color: #fff;
+  border: 1px solid #38A4FF;
+}
+.yellowButton1 , .yellowButton2:hover{
+  color: #fff;
+  background-color: #ff0;
+}
+.yellowButton1:hover , .yellowButton2{
+  color: #ff0;
+  background-color: #fff;
+  border: 1px solid #ff0;
+}
+.redButton1 , .redButton2:hover{
+  color: #fff;
+  background-color: #f00;
+}
+.redButton1:hover , .redButton2{
+  color: #f00;
+  background-color: #fff;
+  border: 1px solid #f00;
+}
+
 
 /* Element page styling ends  */
 

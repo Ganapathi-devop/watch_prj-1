@@ -52,7 +52,7 @@ $(document).ready(function(){
          pageDropdown.css("display", "block");
        }
      );
-     innerPageDropdown.mouseleave(
+     pages.mouseleave(
        function() {
          pageDropdown.css("display", "none");
        }
