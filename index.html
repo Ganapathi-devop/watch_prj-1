@@ -47,7 +47,7 @@
     <!-- style css link -->
     <link rel="stylesheet" href="style/style.css">
     <!-- responsive css link -->
-    <link rel="stylesheet" href="style/responsive.css">
+    <link rel="stylesheet" href="style/responsive.css-">
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
@@ -71,83 +71,81 @@
 </head>
 <body id="body">
 
-    <!-- header section -->
+<!-- header section -->
 
-    <div class="header d-flex py-4 px-2">
-        <div class="container-fluid">
-            <div class="row">
-                <div id="header_logo" class="float-left col-xl-3 col-md-6 col-lg-2 col-6">
-                    <img src="img/logo.webp" alt="">
+<div class="header d-flex py-4 px-2">
+    <div class="container-fluid">
+        <div class="row">
+            <div id="header_logo" class="float-left col-xl-3 col-md-6 col-lg-2 col-6">
+                <img src="/img/logo.webp" alt="">
+            </div>
+            <div id="navbar-bar" class="col-6 col-md-6 text-right float-right">
+                <div class="navbaricon float-left text-right ml-3 pl-3 col-md-9">
+                    <i class="header_i fa fa-search py-xl-1 px-xl-3 p-1 p-md-2"></i>
+                    <i class="header_i fa fa-user py-xl-1 px-xl-3 p-1 p-md-2"></i>
+                    <i class="header_i fa fa-shopping-cart py-xl-1 px-xl-3 p-1 p-md-2"></i>
                 </div>
-                <div id="navbar-bar" class="col-6 col-md-6 text-right float-right">
-                    <div class="navbaricon float-left text-right ml-3 pl-3 col-md-9">
-                        <i class="header_i fa fa-search py-xl-1 px-xl-3 p-1 p-md-2"></i>
-                        <i class="header_i fa fa-user py-xl-1 px-xl-3 p-1 p-md-2"></i>
-                        <i class="header_i fa fa-shopping-cart py-xl-1 px-xl-3 p-1 p-md-2"></i>
+                <i class="fa fa-bars text-danger p-1 m-1"></i>
+            </div>
+            
+            <div id="navbar-list" class=" navbar-list col-12 text-capitalize">
+                <ul id="list-1" class="m-2 p-1" style="list-style: none;">
+                    <li class="m-1 p-1"><a href="index.html">home</a></li>
+                    <li class="m-1 p-1"><a href="/pages/shop-page.html">Shop</a></li>
+                    <li class="m-1 p-1">about</li>
+                    <li class="m-1 p-1">latest
+                        <i id="plus-icon" class="fa fa-plus float-right"></i>
+                    </li>
+                    <li class="m-1 p-1">blog
+                        <i id="plus-icon" class="fa fa-plus float-right"></i>
+                    </li>
+                    <li class="m-1 p-1">pages
+                        <i id="plus-icon" class="fa fa-plus float-right"></i>
+                    </li>
+                    <li class="m-1 p-1">contact</li>
+                </ul>
+            </div>
+            <div id="header_navmenu" class="float-left col-6 col-lg-8 col-xl-6 text-center">
+                <a href="../index.html" class="header_a py-1 px-3">Home</a>
+                <a href="shop-page.html" class="header_a py-1 px-3">Shop</a>
+                <a href="about-page.html" class="header_a py-1 px-3">About</a>
+                <div id="latest" class="d-inline">
+                    <a href="#"  class="header_a py-1 px-3">Latest</a>
+                    <div id="latest_dropdown" class="latest_dropdown m-1 p-1">
+                        <a href="shop-page.html"><h4 id="productlist">Product List</h4></a>            <!--dropdown menu for latest (a tag in header section) -->
+                        <a href="product-detail-page.html"><h4 id="productdetails">Product Details</h4></a>
                     </div>
-                    <i class="fa fa-bars text-danger p-1 m-1"></i>
                 </div>
-                
-                <div id="navbar-list" class=" navbar-list col-12 text-capitalize">
-                    <ul id="list-1" class="m-2 p-1" style="list-style: none;">
-                        <li class="m-1 p-1">home</li>
-                        <li class="m-1 p-1">Shop</li>
-                        <li class="m-1 p-1">about</li>
-                        <li class="m-1 p-1">latest
-                            <i id="plus-icon" class="fa fa-plus float-right"></i>
-                        </li>
-                        <li class="m-1 p-1">blog
-                            <i id="plus-icon" class="fa fa-plus float-right"></i>
-                        </li>
-                        <li class="m-1 p-1">pages
-                            <i id="plus-icon" class="fa fa-plus float-right"></i>
-                        </li>
-                        <li class="m-1 p-1">contact</li>
-                    </ul>
-                </div>
-                <div id="header_navmenu" class="float-left col-6 col-lg-8 col-xl-6 text-center">
-                    <a href="#" class="header_a py-1 px-3">Home</a>
-                    <a href="/pages/shop-page.html" class="header_a py-1 px-3">Shop</a>
-                    <a href="/pages/about-page.html" class="header_a py-1 px-3">About</a>
-                    <div id="latest" class="d-inline">
-                        <a href="#"  class="header_a py-1 px-3">Latest</a>
-                        <div id="latest_dropdown" class="latest_dropdown m-1 p-1">
-                            <a href="/pages/shop-page.html" id="productlist">Product List</a>                                     <!--dropdown menu for latest (a tag in header section) -->
-                            <a href="/pages/product-detail-page.html" id="productdetails">Product Details</a>
-                        </div>
+                <div id="blog" class="d-inline">
+                    <a href="#" class="header_a py-1 px-3">Blog</a>
+                    <div id="blog_dropdown" class="blog_dropdown m-1 p-1">
+                        <a href="#"><h4 id="blogs">Blogs</h4></a>                     <!--dropdown menu for blog (a tag in header section) -->
+                        <a href="#"><h4 id="blogdetails">Blog Details</h4></a>
                     </div>
-                    <div id="blog" class="d-inline">
-                        <a href="#" class="header_a py-1 px-3">Blog</a>
-                        <div id="blog_dropdown" class="blog_dropdown m-1 p-1">
-                            <h4 id="blogs">Blogs</h4>                                             <!--dropdown menu for blog (a tag in header section) -->
-                            <h4 id="blogdetails">Blog Details</h4>
-                        </div>
-                    </div>
-                    <div id="pages" class="d-inline">
-                        <a href="#"class="header_a py-1 px-3">Pages</a>
-                        <div id="page_dropdown" class="page_dropdown m-1 p-1">
-                            <div class="flex-div">
-                                <a id="login-page"href="/pages/login-page.html">Login</a></a>                                             <!--dropdown menu for pages (a tag in header section) -->
-                                <a id="cart-page"href="/pages/cart-page.html">Cart</a></a>
-                                <a href="/pages/element-page.html" id="element">Element</a>
-                                <a id="confirmation">Confirmation</a>
-                                <a id="productcheckout">Product Checkout</a>
-                            </div>
-                        </div>
-                    </div>
-                    <a href="#" class="header_a py-1 px-3">Contact</a>
                 </div>
-                <div id="header_navicon" class="float-right col-xl-3 col-12 col-md-4 col-lg-2 m-2 m-lg-0 text-right">
-                    <a id="search" class="header_i fa fa-search py-xl-1 px-xl-3 p-1"></a>
-                    <a href="/pages/login-page.html" class="header_i fa fa-user py-xl-1 px-xl-3 p-1"></a>
-                    <a href="/pages/cart-page.html" class="header_i fa fa-shopping-cart py-xl-1 px-xl-3 p-1"></a>
+                <div id="pages" class="d-inline">
+                    <a href="#"class="header_a py-1 px-3">Pages</a>
+                    <div id="page_dropdown" class="page_dropdown m-1 p-1">
+                        <a href="login-page.html"><h4 id="login">Login</h4></a>      <!--dropdown menu for pages (a tag in header section) -->
+                        <a href="cart-page.html"><h4 id="cart">Cart</h4></a>
+                        <a href="element-page.html"><h4 id="element">Element</h4></a>
+                        <a href="confirmation-page.html"><h4 id="confirmation">Confirmation</h4></a>
+                        <a href="product-checkout-page.html"><h4 id="productcheckout">Product Checkout</h4></a>
+                    </div>
                 </div>
+                <a href="#" class="header_a py-1 px-3">Contact</a>
+            </div>
+            <div id="header_navicon" class="float-right col-xl-3 col-12 col-md-4 col-lg-2 m-2 m-lg-0 text-right">
+                <a class="header_i fa fa-search py-xl-1 px-xl-3 p-1"></a>
+                <a href="/pages/login-page.html" class="header_i fa fa-user py-xl-1 px-xl-3 p-1"></a>
+                <a href="cart-page.html" class="header_i fa fa-shopping-cart py-xl-1 px-xl-3 p-1"></a>
             </div>
         </div>
     </div>
-    
+</div>
 
-    <!-- header section ends  -->
+
+<!-- header section ends  -->
     <!-- user  intraction -->
     <div class="user_profile">
         <h3>Hello..!! <?php echo $row['username'] ?></h3>
@@ -312,9 +310,7 @@
         </div>
     </div>
 </div>
-<div>
-    <img src="img/popular6" alt="popular6">
-</div>
+
 <!-- popular section ends -->
 <!-- video section starts -->
 <div class="video-section">
@@ -467,6 +463,6 @@
         user_profile.append(h3);
     }    
 </script>
-<!-- link to scrip file -->
+<!-- link to script file -->
  <script src="script/script.js"></script>
 </html>
